@@ -1,123 +1,96 @@
 ---
 layout: default
+title: Home
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+# Dhwani Patel
 
-[Link to another page](./another-page.html).
+**Software Engineer | AI Systems & Automation | MS in Artificial Intelligence**
 
-There should be whitespace between paragraphs.
+Jersey City, NJ  
+[Email](mailto:dpatel8@mail.yu.edu) · [LinkedIn](#) · [GitHub](#) · [Experience](experience.md) · [Awards](awards.md)
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+---
 
-# Header 1
+## About Me
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+I am a software engineer and AI graduate student at **Yeshiva University, Katz School of Science and Health**, pursuing an **M.S. in Artificial Intelligence** with a **4.0 GPA**. I bring **2+ years of software engineering experience** building automation pipelines, AI-driven systems, CI/CD workflows, cloud monitoring tools, and data validation solutions across production environments.
 
-## Header 2
+My work focuses on turning complex workflows into reliable, scalable systems. I have built AI-powered portals, RAG-based assistants, ML validation pipelines, cloud cost monitoring automation, and end-to-end integrations using APIs such as Monday.com and Square. I enjoy working at the intersection of **AI, backend engineering, automation, DevOps, and real-world product impact**.
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+---
 
-### Header 3
+## What I Do
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
+- Build AI-powered applications using **LLMs, RAG pipelines, LangChain, embeddings, and prompt engineering**
+- Design backend and automation systems using **Python, JavaScript, Java, C#, and REST APIs**
+- Develop CI/CD pipelines and test automation frameworks using **Jenkins, GitHub Actions, Robot Framework, Selenium, Playwright, pytest, and unittest**
+- Validate ML systems through **data quality audits, reproducibility checks, edge-case testing, and model evaluation**
+- Create cloud and DevOps solutions across **AWS, GCP, Docker, Kubernetes, and CI/CD workflows**
+- Automate business operations through integrations with **Monday.com, Square, JotForm, Twilio, and custom portals**
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+---
 
-#### Header 4
+## Featured Highlights
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
+### AI Engineer Intern — Robbie & Co.
 
-##### Header 5
+Built AI-driven automation systems for a real business environment, including a natural-language order lookup portal, digital intake workflows, and API integrations that reduced manual effort and improved data reliability.
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
+### Software Engineer — Veritas Technologies
 
-###### Header 6
+Owned upgrade automation pipelines, built CI/CD workflows, developed Python/Java/C++ automation scripts, validated security and reliability features, and created AWS monitoring automation that helped save approximately **$25,000/month** in cloud infrastructure costs.
 
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
+### Research Assistant — Yeshiva University
 
-### There's a horizontal rule below this.
+Engineering automated ML model validation pipelines for high-dimensional medical data, focusing on dataset quality, reproducibility, edge-case testing, and reliable AI model evaluation.
 
-* * *
+---
 
-### Here is an unordered list:
+## Featured Projects
 
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
+### RAG-Based LLM Assistant
 
-### And an ordered list:
+Built a Retrieval-Augmented Generation assistant using **Python, LangChain, embeddings, and LLMs** to enable natural-language querying over structured data and reduce manual lookup effort.
 
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
+### DoseDiff: Diffusion Model for Radiotherapy Dose Prediction
 
-### And a nested list:
+Developed a diffusion-model pipeline using **PyTorch and UNet-based architecture** for radiotherapy dose prediction, with robust preprocessing and evaluation on high-dimensional clinical datasets.
 
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
+### Real-Time CNN Audio Classification System
 
-### Small image
+Designed a real-time CNN-based audio classification system trained on ESC-50 for low-latency emergency sound detection, inspired by acoustic surveillance and safety applications.
 
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
+### AI-Powered Business Automation Portal
 
-### Large image
+Created custom systems for Robbie & Co. to digitize tuxedo rental workflows, connect customer records with Monday.com and Square, and support measurement intake, payment workflows, order lookup, and return tracking.
 
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
+---
 
+## Technical Skills
 
-### Definition lists can be used with HTML syntax.
+**AI / LLMs:** Claude, GPT-4, Gemini, RAG, LangChain, prompt engineering, AI agents, embeddings, fine-tuning  
+**Machine Learning:** PyTorch, scikit-learn, NumPy, Pandas, model validation, reproducibility testing  
+**Automation & QA:** Robot Framework, Selenium, Playwright, pytest, unittest, REST API testing, BDD, Cucumber/Gherkin  
+**Cloud & DevOps:** AWS EC2, S3, IAM, CloudWatch, GCP, Docker, Kubernetes, Jenkins, GitHub Actions, CI/CD  
+**Programming:** Python, JavaScript, Java, C, C++, C#, SQL  
+**Tools:** Git, JIRA, TestRail, Postman, Allure, Confluence, Tableau, Power BI, Monday.com API, Square API
 
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
+---
 
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
+## Education
 
-```
-The final element.
-```
+**M.S. in Artificial Intelligence**  
+Yeshiva University, Katz School of Science and Health — New York, NY  
+Expected May 2026 · GPA: 4.0
+
+**B.E. in Computer Science**  
+Savitribai Phule Pune University, Sinhgad Institute of Technology — Pune, India  
+May 2022 · GPA: 3.76 · Honors in AI and ML
+
+---
+
+## Explore More
+
+- [Experience](experience.md)
+- [Awards](awards.md)
