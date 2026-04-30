@@ -24,5 +24,6 @@
     `;
 
     grid.appendChild(card);
+    requestAnimationFrame(() => requestAnimationFrame(() => card.classList.add('visible')));
   });
 })();

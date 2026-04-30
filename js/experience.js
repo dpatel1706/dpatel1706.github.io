@@ -9,7 +9,7 @@
   DATA.experience.forEach((job, i) => {
     const item = document.createElement('div');
     item.className = 'timeline-item';
-    item.style.transitionDelay = (i * 0.1) + 's';
+    item.style.transitionDelay = (i * 0.12) + 's';
 
     const bulletsHTML = job.bullets
       .map(b => `<li>${b}</li>`)
@@ -22,11 +22,12 @@
           <div class="timeline-role">${job.role}</div>
           <div class="timeline-date">${job.date}</div>
         </div>
-        <div class="timeline-company">▸ ${job.company} &mdash; ${job.location}</div>
+        <div class="timeline-company">▸ ${job.company} — ${job.location}</div>
         <ul class="timeline-bullets">${bulletsHTML}</ul>
       </div>
     `;
 
     timeline.appendChild(item);
+    requestAnimationFrame(() => requestAnimationFrame(() => item.classList.add('visible')));
   });
 })();
