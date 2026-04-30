@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dhwani Patel — AI Engineer. MS Artificial Intelligence, Yeshiva University. Building LLMs, RAG pipelines, and production AI systems." />
+  <meta name="keywords" content="AI Engineer, ML Engineer, LLM, RAG, PyTorch, Dhwani Patel" />
+  <title>Dhwani Patel — AI Engineer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&family=JetBrains+Mono:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/cards.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div id="cursor"></div>
+  <div id="cursor-trail"></div>
+
+  <!-- Background FX -->
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <nav id="navbar">
+    <div class="nav-logo">dp <span class="nav-logo-sep">//</span> ai engineer</div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#awards">Awards</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="nav-cta" href="mailto:dpatel8@mail.yu.edu">Hire Me</a>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="hero-status">
+          <span class="status-dot"></span>
+          Available for full-time roles · May 2026
+        </span>
+      </div>
+
+      <h1 class="hero-heading">
+        Building AI that<br />
+        <span class="gradient-text">ships to production.</span>
+      </h1>
+
+      <p class="hero-sub">
+        I'm <strong>Dhwani Patel</strong> — AI Engineer with hands-on experience across
+        <strong>LLMs, RAG pipelines, ML systems</strong> and production automation.
+        M.S. Artificial Intelligence @ Yeshiva University · <strong>4.0 GPA</strong> ·
+        Top&#8209;15 globally out of 2,400+ teams at ARC × USDC Hackathon.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn-primary" href="mailto:dpatel8@mail.yu.edu">Get in Touch</a>
+        <a class="btn-ghost" href="https://linkedin.com/in/dhwanipatel1706" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn-ghost" href="https://github.com/dpatel1706" target="_blank" rel="noopener">GitHub ↗</a>
+        <a class="btn-ghost" href="https://dpatel1706.github.io/" target="_blank" rel="noopener">Live Site ↗</a>
+      </div>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <div class="hero-terminal">
+        <div class="terminal-bar">
+          <span class="terminal-dot red"></span>
+          <span class="terminal-dot yellow"></span>
+          <span class="terminal-dot green"></span>
+          <span class="terminal-title">dhwani@ai-engineer ~ </span>
+        </div>
+        <div class="terminal-body" id="terminal-body"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== STATS ==================== -->
+  <div class="stats-strip" id="about">
+    <div class="stat-item">
+      <div class="stat-num" data-target="4.0" data-suffix="">4.0</div>
+      <div class="stat-label">GPA — MS in AI</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">$25K</div>
+      <div class="stat-label">Monthly cloud cost saved</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">Top 15</div>
+      <div class="stat-label">of 2,400+ hackathon teams</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">3+</div>
+      <div class="stat-label">Years engineering exp.</div>
+    </div>
+  </div>
+
+  <!-- ==================== SKILLS ==================== -->
+  <section class="section" id="skills">
+    <div class="section-header reveal">
+      <span class="section-num">01</span>
+      <h2 class="section-title">Technical Arsenal</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <!-- Filter buttons -->
+    <div class="skill-filters reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="ai">AI / ML</button>
+      <button class="filter-btn" data-filter="cloud">Cloud & DevOps</button>
+      <button class="filter-btn" data-filter="eng">Engineering</button>
+      <button class="filter-btn" data-filter="tools">Tools</button>
+    </div>
+
+    <div class="skills-grid" id="skills-grid">
+      <!-- Populated by js/skills.js -->
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ==================== EXPERIENCE ==================== -->
+  <section class="section" id="experience">
+    <div class="section-header reveal">
+      <span class="section-num">02</span>
+      <h2 class="section-title">Experience</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="timeline" id="timeline">
+      <!-- Populated by js/experience.js -->
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ==================== PROJECTS ==================== -->
+  <section class="section" id="projects">
+    <div class="section-header reveal">
+      <span class="section-num">03</span>
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="projects-grid" id="projects-grid">
+      <!-- Populated by js/projects.js -->
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ==================== AWARDS ==================== -->
+  <section class="section" id="awards">
+    <div class="section-header reveal">
+      <span class="section-num">04</span>
+      <h2 class="section-title">Awards & Recognition</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="awards-grid" id="awards-grid">
+      <!-- Populated by js/awards.js -->
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ==================== EDUCATION ==================== -->
+  <section class="section" id="education">
+    <div class="section-header reveal">
+      <span class="section-num">05</span>
+      <h2 class="section-title">Education</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="edu-grid" id="edu-grid">
+      <!-- Populated by js/education.js -->
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section class="section" id="contact">
+    <div class="contact-wrapper">
+      <div class="contact-left reveal">
+        <h2 class="contact-heading">Let's build<br /><span class="gradient-text">something great.</span></h2>
+        <p class="contact-desc">
+          I'm actively seeking AI Engineer, ML Engineer, and AI Automation Engineer roles
+          at companies building at the frontier of what AI can do. Let's talk.
+        </p>
+        <div class="contact-links">
+          <a class="contact-link" href="mailto:dpatel8@mail.yu.edu">
+            <div class="contact-link-icon">✉</div>
+            <div class="contact-link-info">
+              <span class="contact-link-label">Email</span>
+              <span class="contact-link-val">dpatel8@mail.yu.edu</span>
+            </div>
+          </a>
+          <a class="contact-link" href="https://linkedin.com/in/dhwanipatel1706" target="_blank" rel="noopener">
+            <div class="contact-link-icon">in</div>
+            <div class="contact-link-info">
+              <span class="contact-link-label">LinkedIn</span>
+              <span class="contact-link-val">dhwanipatel1706</span>
+            </div>
+          </a>
+          <a class="contact-link" href="https://github.com/dpatel1706" target="_blank" rel="noopener">
+            <div class="contact-link-icon">gh</div>
+            <div class="contact-link-info">
+              <span class="contact-link-label">GitHub</span>
+              <span class="contact-link-val">dpatel1706</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-card reveal" style="transition-delay:0.15s">
+        <div class="contact-card-label">Current Status</div>
+        <h3 class="contact-card-title">Open to Opportunities</h3>
+        <div class="availability-badge">
+          <span class="status-dot"></span>
+          Available — May 2026
+        </div>
+        <div class="contact-card-label" style="margin-top:1.4rem;">Seeking Roles</div>
+        <div class="seeking-list">
+          <div class="seeking-item">AI Engineer</div>
+          <div class="seeking-item">ML Engineer</div>
+          <div class="seeking-item">AI Automation Engineer</div>
+          <div class="seeking-item">Applied AI / LLM Engineer</div>
+        </div>
+        <div class="contact-card-label" style="margin-top:1.4rem;">Education</div>
+        <div class="edu-summary">
+          <div class="edu-summary-title">M.S. Artificial Intelligence</div>
+          <div class="edu-summary-sub">Yeshiva University · GPA 4.0 · May 2026</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+    <div class="footer-copy">© 2026 Dhwani Patel · Built with intent.</div>
+    <div class="footer-links">
+      <a href="https://dpatel1706.github.io/" target="_blank" rel="noopener">Portfolio</a>
+      <a href="https://github.com/dpatel1706" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/dhwanipatel1706" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:dpatel8@mail.yu.edu">Email</a>
+    </div>
+  </footer>
+
+  <!-- Scripts (order matters) -->
+  <script src="js/data.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/terminal.js"></script>
+  <script src="js/skills.js"></script>
+  <script src="js/experience.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/awards.js"></script>
+  <script src="js/education.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>
