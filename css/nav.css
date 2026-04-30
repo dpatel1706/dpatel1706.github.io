@@ -1,110 +1,83 @@
-/* =========================================
-   nav.css — Navigation Styles
-   ========================================= */
+/* nav.css */
 
-nav {
+#site-header {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: var(--z-nav);
+  top: 0; left: 0; right: 0;
+  z-index: 200;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 1.2rem 3rem;
-  background: rgba(4, 6, 14, 0.8);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  justify-content: space-between;
+  padding: 1.4rem 3rem;
+  background: rgba(10,10,10,0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border);
-  transition: background 0.3s var(--ease), padding 0.3s var(--ease);
+  transition: padding 0.3s var(--ease);
 }
+#site-header.compact { padding: 1rem 3rem; }
 
-nav.scrolled {
-  padding: 0.9rem 3rem;
-  background: rgba(4, 6, 14, 0.95);
-}
-
-.nav-logo {
-  font-family: var(--font-mono);
-  font-size: 13px;
-  color: var(--cyan);
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  font-weight: 500;
-  user-select: none;
-}
-.nav-logo-sep {
-  color: var(--text-muted);
-  margin: 0 4px;
-}
-
-.nav-links {
-  display: flex;
-  gap: 2.5rem;
-  list-style: none;
-}
-.nav-links a {
-  font-size: 11px;
+.site-brand {
+  font-family: var(--font-serif);
+  font-size: 18px;
   font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  text-decoration: none;
-  position: relative;
-  transition: color var(--duration);
+  color: var(--text);
+  letter-spacing: 0.01em;
+  flex-shrink: 0;
 }
-.nav-links a::after {
+.site-brand:hover { color: var(--accent); }
+
+#site-nav {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+#site-nav a {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+  position: relative;
+  transition: color 0.2s;
+}
+#site-nav a::after {
   content: '';
   position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 0;
-  height: 1px;
-  background: var(--cyan);
-  transition: width var(--duration) var(--ease);
+  bottom: -2px; left: 0;
+  width: 0; height: 1px;
+  background: var(--accent);
+  transition: width 0.25s var(--ease);
 }
-.nav-links a:hover,
-.nav-links a.active {
-  color: var(--cyan);
-}
-.nav-links a:hover::after,
-.nav-links a.active::after {
-  width: 100%;
-}
+#site-nav a:hover,
+#site-nav a.active { color: var(--text); }
+#site-nav a:hover::after,
+#site-nav a.active::after { width: 100%; }
 
-.nav-cta {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  padding: 8px 18px;
-  border: 1px solid var(--cyan);
-  color: var(--cyan);
-  background: transparent;
-  border-radius: var(--radius-sm);
-  cursor: pointer;
-  text-decoration: none;
-  transition: background var(--duration), color var(--duration);
-  letter-spacing: 0.1em;
-  white-space: nowrap;
+#site-nav .nav-resume {
+  padding: 8px 20px;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  border-radius: 3px;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  transition: background 0.2s, color 0.2s;
 }
-.nav-cta:hover {
-  background: var(--cyan);
+#site-nav .nav-resume:hover {
+  background: var(--accent);
   color: var(--bg);
 }
+#site-nav .nav-resume::after { display: none; }
 
-/* Hamburger (mobile) */
+/* Hamburger */
 .hamburger {
   display: none;
   flex-direction: column;
   gap: 5px;
-  background: none;
-  border: none;
-  cursor: pointer;
   padding: 4px;
 }
 .hamburger span {
   display: block;
-  width: 22px;
-  height: 1.5px;
+  width: 22px; height: 1.5px;
   background: var(--text);
   border-radius: 2px;
   transition: transform 0.3s, opacity 0.3s;
@@ -113,30 +86,20 @@ nav.scrolled {
 .hamburger.open span:nth-child(2) { opacity: 0; }
 .hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
 
-@media (max-width: 900px) {
-  nav {
-    padding: 1rem 1.5rem;
-    flex-wrap: wrap;
-  }
-  nav.scrolled { padding: 0.8rem 1.5rem; }
-
-  .hamburger { display: flex; }
-  .nav-cta   { display: none; }
-
-  .nav-links {
+@media (max-width: 860px) {
+  #site-header { padding: 1.1rem 1.5rem; flex-wrap: wrap; }
+  .hamburger   { display: flex; }
+  #site-nav {
     display: none;
     flex-direction: column;
+    align-items: flex-start;
     gap: 0;
     width: 100%;
     border-top: 1px solid var(--border);
-    margin-top: 0.8rem;
-    padding-top: 0.8rem;
+    padding-top: 1rem;
+    margin-top: 0.6rem;
     order: 3;
   }
-  .nav-links.open { display: flex; }
-  .nav-links li a {
-    display: block;
-    padding: 0.6rem 0;
-    font-size: 13px;
-  }
+  #site-nav.open { display: flex; }
+  #site-nav a { padding: 0.55rem 0; font-size: 15px; width: 100%; }
 }

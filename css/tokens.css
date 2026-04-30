@@ -1,0 +1,38 @@
+/* tokens.css — Design Tokens */
+:root {
+  /* Dark palette */
+  --bg:          #0a0a0a;
+  --bg-alt:      #111111;
+  --surface:     #161616;
+  --surface2:    #1e1e1e;
+  --border:      #242424;
+  --border-mid:  #303030;
+
+  /* Accent — warm gold, distinctive from generic cyan/purple */
+  --accent:      #c8a96e;
+  --accent-dim:  rgba(200,169,110,0.12);
+  --accent-glow: rgba(200,169,110,0.22);
+  --accent-hover:#e0c48a;
+
+  /* Text */
+  --text:        #f0ece4;
+  --text-muted:  #7a7570;
+  --text-dim:    #3d3a36;
+
+  /* Status */
+  --green:       #4ade80;
+  --green-dim:   rgba(74,222,128,0.1);
+
+  /* Typography */
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans:  'DM Sans', system-ui, sans-serif;
+  --font-mono:  'DM Mono', 'Courier New', monospace;
+
+  /* Layout */
+  --max-w: 1200px;
+  --section-pad: 6rem 3rem;
+
+  /* Ease */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+}

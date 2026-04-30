@@ -1,278 +1,520 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Dhwani Patel — AI Engineer. MS Artificial Intelligence, Yeshiva University. Building LLMs, RAG pipelines, and production AI systems." />
-  <meta name="keywords" content="AI Engineer, ML Engineer, LLM, RAG, PyTorch, Dhwani Patel" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Dhwani Patel — AI Engineer. MS Artificial Intelligence @ Yeshiva University. LLMs, RAG, PyTorch, production AI systems."/>
   <title>Dhwani Patel — AI Engineer</title>
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&family=JetBrains+Mono:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet" />
-
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/variables.css" />
-  <link rel="stylesheet" href="css/base.css" />
-  <link rel="stylesheet" href="css/nav.css" />
-  <link rel="stylesheet" href="css/hero.css" />
-  <link rel="stylesheet" href="css/sections.css" />
-  <link rel="stylesheet" href="css/cards.css" />
-  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/reset.css"/>
+  <link rel="stylesheet" href="css/tokens.css"/>
+  <link rel="stylesheet" href="css/layout.css"/>
+  <link rel="stylesheet" href="css/nav.css"/>
+  <link rel="stylesheet" href="css/hero.css"/>
+  <link rel="stylesheet" href="css/ticker.css"/>
+  <link rel="stylesheet" href="css/sections.css"/>
+  <link rel="stylesheet" href="css/cards.css"/>
+  <link rel="stylesheet" href="css/contact.css"/>
 </head>
 <body>
 
-  <!-- Custom Cursor -->
-  <div id="cursor"></div>
-  <div id="cursor-trail"></div>
-
-  <!-- Background FX -->
-  <div class="orb orb-1"></div>
-  <div class="orb orb-2"></div>
-  <div class="orb orb-3"></div>
-
-  <!-- ==================== NAVIGATION ==================== -->
-  <nav id="navbar">
-    <div class="nav-logo">dp <span class="nav-logo-sep">//</span> ai engineer</div>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+  <!-- ═══════════════ NAV ═══════════════ -->
+  <header id="site-header">
+    <a href="#" class="site-brand">Dhwani Patel</a>
+    <button class="hamburger" id="hamburger" aria-label="menu">
       <span></span><span></span><span></span>
     </button>
-    <ul class="nav-links" id="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#awards">Awards</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <a class="nav-cta" href="mailto:dpatel8@mail.yu.edu">Hire Me</a>
-  </nav>
+    <nav id="site-nav">
+      <a href="#experience">Work Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#awards">Awards</a>
+      <a href="#contact">Contact</a>
+      <a href="mailto:dpatel8@mail.yu.edu" class="nav-resume">Hire Me ↗</a>
+    </nav>
+  </header>
 
-  <!-- ==================== HERO ==================== -->
-  <section class="hero" id="hero">
-    <div class="hero-content">
-      <div class="hero-tag">
-        <span class="hero-status">
-          <span class="status-dot"></span>
-          Available for full-time roles · May 2026
-        </span>
+  <!-- ═══════════════ HERO ═══════════════ -->
+  <section id="hero">
+    <div class="hero-left">
+      <div class="hero-photo-wrap">
+        <!-- Initials avatar since no photo available -->
+        <div class="hero-avatar">DP</div>
+        <div class="hero-photo-ring"></div>
       </div>
-
-      <h1 class="hero-heading">
-        Building AI that<br />
-        <span class="gradient-text">ships to production.</span>
-      </h1>
-
-      <p class="hero-sub">
-        I'm <strong>Dhwani Patel</strong> — AI Engineer with hands-on experience across
-        <strong>LLMs, RAG pipelines, ML systems</strong> and production automation.
-        M.S. Artificial Intelligence @ Yeshiva University · <strong>4.0 GPA</strong> ·
-        Top&#8209;15 globally out of 2,400+ teams at ARC × USDC Hackathon.
-      </p>
-
-      <div class="hero-actions">
-        <a class="btn-primary" href="mailto:dpatel8@mail.yu.edu">Get in Touch</a>
-        <a class="btn-ghost" href="https://linkedin.com/in/dhwanipatel1706" target="_blank" rel="noopener">LinkedIn ↗</a>
-        <a class="btn-ghost" href="https://github.com/dpatel1706" target="_blank" rel="noopener">GitHub ↗</a>
-        <a class="btn-ghost" href="https://dpatel1706.github.io/" target="_blank" rel="noopener">Live Site ↗</a>
+      <div class="hero-social">
+        <a href="https://linkedin.com/in/dhwanipatel1706" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://github.com/dpatel1706" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+        </a>
+        <a href="mailto:dpatel8@mail.yu.edu" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+        <a href="https://dpatel1706.github.io/" target="_blank" rel="noopener" aria-label="Portfolio site">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+        </a>
       </div>
     </div>
 
-    <div class="hero-visual" aria-hidden="true">
-      <div class="hero-terminal">
-        <div class="terminal-bar">
-          <span class="terminal-dot red"></span>
-          <span class="terminal-dot yellow"></span>
-          <span class="terminal-dot green"></span>
-          <span class="terminal-title">dhwani@ai-engineer ~ </span>
-        </div>
-        <div class="terminal-body" id="terminal-body"></div>
+    <div class="hero-right">
+      <p class="hero-eyebrow">
+        <span class="dot-live"></span>
+        Open to full-time roles · May 2026
+      </p>
+      <h1 class="hero-name">
+        I am an <em>AI Engineer</em><br/>
+        building systems that<br/>
+        <em>ship to production.</em>
+      </h1>
+      <p class="hero-bio">
+        Currently pursuing an <strong>M.S. in Artificial Intelligence</strong> at Yeshiva University
+        (GPA 4.0), I build production-grade AI systems across LLMs, RAG pipelines, diffusion models,
+        and end-to-end automation. At Robbie &amp; Co., I replaced an entire paper-based operation
+        with an AI-driven platform integrating Square, Monday.com, and the Anthropic API.
+        At Veritas Technologies I delivered cloud automation saving <strong>$25,000/month</strong>.
+        I finished <strong>Top&#8209;15 globally</strong> out of 2,400+ teams at the ARC × USDC
+        Hackathon NYC, and took <strong>2nd place</strong> at the YU Innovation Challenge —
+        turning ambitious ideas into working systems under pressure.
+      </p>
+
+      <div class="hero-cta-row">
+        <a href="mailto:dpatel8@mail.yu.edu" class="btn-primary">Get in Touch</a>
+        <a href="https://linkedin.com/in/dhwanipatel1706" target="_blank" class="btn-outline">LinkedIn ↗</a>
+      </div>
+
+      <div class="hero-nav-grid">
+        <a href="#experience" class="hero-nav-item">
+          <span class="hni-label">Work Experience</span>
+          <span class="hni-arrow">→</span>
+        </a>
+        <a href="#projects" class="hero-nav-item">
+          <span class="hni-label">Projects</span>
+          <span class="hni-arrow">→</span>
+        </a>
+        <a href="#awards" class="hero-nav-item">
+          <span class="hni-label">Awards &amp; Recognition</span>
+          <span class="hni-arrow">→</span>
+        </a>
+        <a href="#education" class="hero-nav-item">
+          <span class="hni-label">Education</span>
+          <span class="hni-arrow">→</span>
+        </a>
+        <a href="#skills" class="hero-nav-item">
+          <span class="hni-label">Technical Skills</span>
+          <span class="hni-arrow">→</span>
+        </a>
+        <a href="#contact" class="hero-nav-item">
+          <span class="hni-label">Contact</span>
+          <span class="hni-arrow">→</span>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- ==================== STATS ==================== -->
-  <div class="stats-strip" id="about">
-    <div class="stat-item">
-      <div class="stat-num" data-target="4.0" data-suffix="">4.0</div>
-      <div class="stat-label">GPA — MS in AI</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-num">$25K</div>
-      <div class="stat-label">Monthly cloud cost saved</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-num">Top 15</div>
-      <div class="stat-label">of 2,400+ hackathon teams</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-num">3+</div>
-      <div class="stat-label">Years engineering exp.</div>
+  <!-- ═══════════════ SKILLS TICKER ═══════════════ -->
+  <div class="ticker-wrap" id="skills">
+    <div class="ticker-track">
+      <span>PyTorch</span><span class="sep">·</span>
+      <span>LangChain</span><span class="sep">·</span>
+      <span>RAG Pipelines</span><span class="sep">·</span>
+      <span>LLMs</span><span class="sep">·</span>
+      <span>Claude API</span><span class="sep">·</span>
+      <span>GPT-4</span><span class="sep">·</span>
+      <span>Diffusion Models</span><span class="sep">·</span>
+      <span>Transformers</span><span class="sep">·</span>
+      <span>AWS</span><span class="sep">·</span>
+      <span>Docker</span><span class="sep">·</span>
+      <span>Kubernetes</span><span class="sep">·</span>
+      <span>Jenkins CI/CD</span><span class="sep">·</span>
+      <span>Selenium</span><span class="sep">·</span>
+      <span>Playwright</span><span class="sep">·</span>
+      <span>Python</span><span class="sep">·</span>
+      <span>JavaScript</span><span class="sep">·</span>
+      <span>Embeddings</span><span class="sep">·</span>
+      <span>scikit-learn</span><span class="sep">·</span>
+      <span>Monday.com API</span><span class="sep">·</span>
+      <span>Square API</span><span class="sep">·</span>
+      <!-- duplicate for seamless loop -->
+      <span>PyTorch</span><span class="sep">·</span>
+      <span>LangChain</span><span class="sep">·</span>
+      <span>RAG Pipelines</span><span class="sep">·</span>
+      <span>LLMs</span><span class="sep">·</span>
+      <span>Claude API</span><span class="sep">·</span>
+      <span>GPT-4</span><span class="sep">·</span>
+      <span>Diffusion Models</span><span class="sep">·</span>
+      <span>Transformers</span><span class="sep">·</span>
+      <span>AWS</span><span class="sep">·</span>
+      <span>Docker</span><span class="sep">·</span>
+      <span>Kubernetes</span><span class="sep">·</span>
+      <span>Jenkins CI/CD</span><span class="sep">·</span>
+      <span>Selenium</span><span class="sep">·</span>
+      <span>Playwright</span><span class="sep">·</span>
+      <span>Python</span><span class="sep">·</span>
+      <span>JavaScript</span><span class="sep">·</span>
+      <span>Embeddings</span><span class="sep">·</span>
+      <span>scikit-learn</span><span class="sep">·</span>
+      <span>Monday.com API</span><span class="sep">·</span>
+      <span>Square API</span><span class="sep">·</span>
     </div>
   </div>
 
-  <!-- ==================== SKILLS ==================== -->
-  <section class="section" id="skills">
-    <div class="section-header reveal">
-      <span class="section-num">01</span>
-      <h2 class="section-title">Technical Arsenal</h2>
-      <div class="section-line"></div>
-    </div>
+  <!-- ═══════════════ EXPERIENCE ═══════════════ -->
+  <section class="page-section" id="experience">
+    <div class="section-inner">
+      <div class="section-label">Work Experience</div>
 
-    <!-- Filter buttons -->
-    <div class="skill-filters reveal">
-      <button class="filter-btn active" data-filter="all">All</button>
-      <button class="filter-btn" data-filter="ai">AI / ML</button>
-      <button class="filter-btn" data-filter="cloud">Cloud & DevOps</button>
-      <button class="filter-btn" data-filter="eng">Engineering</button>
-      <button class="filter-btn" data-filter="tools">Tools</button>
-    </div>
-
-    <div class="skills-grid" id="skills-grid">
-      <!-- Populated by js/skills.js -->
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- ==================== EXPERIENCE ==================== -->
-  <section class="section" id="experience">
-    <div class="section-header reveal">
-      <span class="section-num">02</span>
-      <h2 class="section-title">Experience</h2>
-      <div class="section-line"></div>
-    </div>
-
-    <div class="timeline" id="timeline">
-      <!-- Populated by js/experience.js -->
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- ==================== PROJECTS ==================== -->
-  <section class="section" id="projects">
-    <div class="section-header reveal">
-      <span class="section-num">03</span>
-      <h2 class="section-title">Featured Projects</h2>
-      <div class="section-line"></div>
-    </div>
-
-    <div class="projects-grid" id="projects-grid">
-      <!-- Populated by js/projects.js -->
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- ==================== AWARDS ==================== -->
-  <section class="section" id="awards">
-    <div class="section-header reveal">
-      <span class="section-num">04</span>
-      <h2 class="section-title">Awards & Recognition</h2>
-      <div class="section-line"></div>
-    </div>
-
-    <div class="awards-grid" id="awards-grid">
-      <!-- Populated by js/awards.js -->
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- ==================== EDUCATION ==================== -->
-  <section class="section" id="education">
-    <div class="section-header reveal">
-      <span class="section-num">05</span>
-      <h2 class="section-title">Education</h2>
-      <div class="section-line"></div>
-    </div>
-
-    <div class="edu-grid" id="edu-grid">
-      <!-- Populated by js/education.js -->
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- ==================== CONTACT ==================== -->
-  <section class="section" id="contact">
-    <div class="contact-wrapper">
-      <div class="contact-left reveal">
-        <h2 class="contact-heading">Let's build<br /><span class="gradient-text">something great.</span></h2>
-        <p class="contact-desc">
-          I'm actively seeking AI Engineer, ML Engineer, and AI Automation Engineer roles
-          at companies building at the frontier of what AI can do. Let's talk.
-        </p>
-        <div class="contact-links">
-          <a class="contact-link" href="mailto:dpatel8@mail.yu.edu">
-            <div class="contact-link-icon">✉</div>
-            <div class="contact-link-info">
-              <span class="contact-link-label">Email</span>
-              <span class="contact-link-val">dpatel8@mail.yu.edu</span>
-            </div>
-          </a>
-          <a class="contact-link" href="https://linkedin.com/in/dhwanipatel1706" target="_blank" rel="noopener">
-            <div class="contact-link-icon">in</div>
-            <div class="contact-link-info">
-              <span class="contact-link-label">LinkedIn</span>
-              <span class="contact-link-val">dhwanipatel1706</span>
-            </div>
-          </a>
-          <a class="contact-link" href="https://github.com/dpatel1706" target="_blank" rel="noopener">
-            <div class="contact-link-icon">gh</div>
-            <div class="contact-link-info">
-              <span class="contact-link-label">GitHub</span>
-              <span class="contact-link-val">dpatel1706</span>
-            </div>
-          </a>
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-company">Robbie &amp; Co.</div>
+          <div class="exp-location">New York, NY</div>
+          <div class="exp-period">Jun 2025 – Dec 2025</div>
+        </div>
+        <div class="exp-body">
+          <div class="exp-role">AI Automation Engineer Intern</div>
+          <ul class="exp-bullets">
+            <li>Architected and deployed a full-stack AI automation platform integrating <strong>Square Payments, Monday.com CRM</strong>, and custom web portals — digitising an entire paper-based menswear operation end-to-end.</li>
+            <li>Built a <strong>natural-language order lookup portal</strong> using the Anthropic Claude API, enabling non-technical staff to query live business data in plain English via REST APIs with dynamic column mapping.</li>
+            <li>Designed multi-step digital intake, measurement collection, and rental-return workflows, reducing order processing time by <strong>~35%</strong> and eliminating manual data-entry errors.</li>
+            <li>Resolved complex CORS and API integration challenges across Anthropic, Monday.com, and Square — building a scalable, event-driven production architecture.</li>
+          </ul>
+          <div class="exp-tags">
+            <span>Claude API</span><span>Monday.com API</span><span>Square API</span><span>Python</span><span>JavaScript</span><span>REST APIs</span>
+          </div>
         </div>
       </div>
 
-      <div class="contact-card reveal" style="transition-delay:0.15s">
-        <div class="contact-card-label">Current Status</div>
-        <h3 class="contact-card-title">Open to Opportunities</h3>
-        <div class="availability-badge">
-          <span class="status-dot"></span>
-          Available — May 2026
+      <div class="exp-divider"></div>
+
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-company">Yeshiva University<br/>Katz School</div>
+          <div class="exp-location">New York, NY</div>
+          <div class="exp-period">Dec 2024 – Present</div>
         </div>
-        <div class="contact-card-label" style="margin-top:1.4rem;">Seeking Roles</div>
-        <div class="seeking-list">
-          <div class="seeking-item">AI Engineer</div>
-          <div class="seeking-item">ML Engineer</div>
-          <div class="seeking-item">AI Automation Engineer</div>
-          <div class="seeking-item">Applied AI / LLM Engineer</div>
+        <div class="exp-body">
+          <div class="exp-role">AI Researcher</div>
+          <ul class="exp-bullets">
+            <li>Engineering <strong>ML model validation pipelines</strong> for high-dimensional medical data — dataset quality audits, reproducibility checks, edge-case testing, and reliable model evaluation.</li>
+            <li>Built AidArc, an AI + blockchain disaster-relief platform combining LLM-driven eligibility logic with Solidity smart contracts for real-time, tamper-proof aid distribution. Achieved <strong>Top-15 globally</strong> out of 2,400+ teams at ARC × USDC Hackathon NYC.</li>
+            <li>Built DMIING — a decentralised messaging app with end-to-end encryption and blockchain-verified identity — winning <strong>2nd place at the YU Innovation Challenge</strong>.</li>
+          </ul>
+          <div class="exp-tags">
+            <span>PyTorch</span><span>ML Validation</span><span>LLMs</span><span>Blockchain</span><span>Solidity</span><span>Python</span>
+          </div>
         </div>
-        <div class="contact-card-label" style="margin-top:1.4rem;">Education</div>
-        <div class="edu-summary">
-          <div class="edu-summary-title">M.S. Artificial Intelligence</div>
-          <div class="edu-summary-sub">Yeshiva University · GPA 4.0 · May 2026</div>
+      </div>
+
+      <div class="exp-divider"></div>
+
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-company">Yeshiva University</div>
+          <div class="exp-location">Manhattan, NY</div>
+          <div class="exp-period">Jan 2025 – Mar 2026</div>
+        </div>
+        <div class="exp-body">
+          <div class="exp-role">Graduate Assistant</div>
+          <ul class="exp-bullets">
+            <li>Automated GPA conversion and applicant evaluation pipelines using Python rule-based logic and data processing, reducing manual processing time by <strong>~25%</strong>.</li>
+            <li>Identified workflow inefficiencies across admissions; proposed and implemented automation-driven improvements adopted by the team.</li>
+          </ul>
+          <div class="exp-tags">
+            <span>Python</span><span>Automation</span><span>Data Processing</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-divider"></div>
+
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-company">Veritas Technologies LLC</div>
+          <div class="exp-location">India</div>
+          <div class="exp-period">Jul 2022 – Aug 2024</div>
+        </div>
+        <div class="exp-body">
+          <div class="exp-role">Software QA Engineer</div>
+          <ul class="exp-bullets">
+            <li>Built automated regression testing pipelines using <strong>Selenium + Jenkins CI/CD</strong>, cutting manual testing effort by <strong>40%</strong> and accelerating release cycles by 25%.</li>
+            <li>Developed AWS CloudWatch-based cloud monitoring automation that saved <strong>$25,000/month</strong> in infrastructure costs — flagged proactively by leadership.</li>
+            <li>Improved pre-production defect detection by <strong>30%</strong> and system stability by 20% through end-to-end API and UI test strategies across backend systems.</li>
+            <li>Expanded automation coverage by <strong>35%</strong> across critical modules, reducing regression risk and cutting deployment turnaround by 15–20%.</li>
+          </ul>
+          <div class="exp-tags">
+            <span>Selenium</span><span>Jenkins</span><span>AWS</span><span>Python</span><span>Java</span><span>CI/CD</span><span>REST API Testing</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════ PROJECTS ═══════════════ -->
+  <section class="page-section alt-bg" id="projects">
+    <div class="section-inner">
+      <div class="section-label">Projects</div>
+
+      <div class="projects-grid">
+
+        <div class="proj-card featured">
+          <div class="proj-badge award">🏆 Top-15 / 2,400+ Teams · ARC × USDC Hackathon NYC</div>
+          <h3 class="proj-title">AidArc — AI Disaster Relief Platform</h3>
+          <p class="proj-desc">Full-stack AI + blockchain system for emergency financial aid. LLM-driven eligibility logic combined with Solidity smart contracts enables real-time, tamper-proof disbursement — eliminating the delays of manual approval processes.</p>
+          <div class="proj-stack">
+            <span>Python</span><span>LLMs</span><span>Blockchain</span><span>Solidity</span><span>REST APIs</span>
+          </div>
+          <div class="proj-visual ai-visual">
+            <div class="vis-node">Aid Request</div>
+            <div class="vis-arrow">→</div>
+            <div class="vis-node accent">LLM Eligibility</div>
+            <div class="vis-arrow">→</div>
+            <div class="vis-node">Smart Contract</div>
+            <div class="vis-arrow">→</div>
+            <div class="vis-node green">Disbursement</div>
+          </div>
+        </div>
+
+        <div class="proj-card featured">
+          <div class="proj-badge award">🥈 2nd Place · YU Innovation Challenge</div>
+          <h3 class="proj-title">DMIING — Blockchain Secure Messaging</h3>
+          <p class="proj-desc">Decentralised messaging application with end-to-end encryption and blockchain-verified identity. Beats 50+ competing teams. Designed for security-critical communication where trust and authenticity cannot be compromised.</p>
+          <div class="proj-stack">
+            <span>Python</span><span>Solidity</span><span>Web3</span><span>Cryptography</span>
+          </div>
+          <div class="proj-visual blockchain-visual">
+            <div class="chain-block">Block<br/><small>#1</small></div>
+            <div class="chain-link">⛓</div>
+            <div class="chain-block accent">Block<br/><small>#2</small></div>
+            <div class="chain-link">⛓</div>
+            <div class="chain-block">Block<br/><small>#3</small></div>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-badge">RAG System</div>
+          <h3 class="proj-title">RAG-Based LLM Assistant</h3>
+          <p class="proj-desc">Retrieval-Augmented Generation assistant using Python, LangChain, embeddings and LLMs for natural-language querying over structured business data. Dramatically reduces manual lookup effort across operational workflows.</p>
+          <div class="proj-stack">
+            <span>Python</span><span>LangChain</span><span>Embeddings</span><span>Vector DB</span><span>LLMs</span>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-badge">Deep Learning</div>
+          <h3 class="proj-title">DoseDiff — Radiotherapy Diffusion Model</h3>
+          <p class="proj-desc">Diffusion model pipeline using PyTorch and UNet-based architecture for radiotherapy dose prediction on high-dimensional clinical datasets. Focused on medical AI safety, reproducibility, and edge-case robustness.</p>
+          <div class="proj-stack">
+            <span>PyTorch</span><span>UNet</span><span>Diffusion Models</span><span>Python</span>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-badge">Real-Time AI</div>
+          <h3 class="proj-title">CNN Audio Classification System</h3>
+          <p class="proj-desc">Real-time CNN-based audio classifier trained on ESC-50 for low-latency emergency sound detection. Designed for acoustic surveillance and safety-critical applications requiring sub-100ms inference.</p>
+          <div class="proj-stack">
+            <span>CNN</span><span>PyTorch</span><span>ESC-50</span><span>Python</span><span>Real-Time</span>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-badge">Production AI</div>
+          <h3 class="proj-title">AI Business Automation Portal</h3>
+          <p class="proj-desc">Full-stack automation for Robbie &amp; Co. — digitising the tuxedo rental lifecycle from intake to return. NLP order lookup, Monday.com + Square integration, measurement collection, and return tracking.</p>
+          <div class="proj-stack">
+            <span>Anthropic API</span><span>Monday.com</span><span>Square</span><span>Python</span><span>JavaScript</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ AWARDS ═══════════════ -->
+  <section class="page-section" id="awards">
+    <div class="section-inner">
+      <div class="section-label">Awards &amp; Recognition</div>
+
+      <div class="awards-list">
+
+        <div class="award-row">
+          <div class="award-icon-wrap">🏆</div>
+          <div class="award-content">
+            <div class="award-title">Top-15 Globally — ARC × USDC Hackathon NYC</div>
+            <div class="award-sub">AidArc: AI + Blockchain Disaster Relief Platform · Out of 2,400+ teams</div>
+          </div>
+          <div class="award-year">2025</div>
+        </div>
+
+        <div class="award-row">
+          <div class="award-icon-wrap">🥈</div>
+          <div class="award-content">
+            <div class="award-title">2nd Place — YU Innovation Challenge</div>
+            <div class="award-sub">DMIING: Blockchain Secure Messaging App · Out of 50+ competing teams</div>
+          </div>
+          <div class="award-year">2025</div>
+        </div>
+
+        <div class="award-row">
+          <div class="award-icon-wrap">🎓</div>
+          <div class="award-content">
+            <div class="award-title">Academic Excellence — Perfect 4.0 GPA</div>
+            <div class="award-sub">M.S. Artificial Intelligence · Yeshiva University, Katz School</div>
+          </div>
+          <div class="award-year">2024–26</div>
+        </div>
+
+        <div class="award-row">
+          <div class="award-icon-wrap">💰</div>
+          <div class="award-content">
+            <div class="award-title">$25,000/Month Cloud Cost Reduction</div>
+            <div class="award-sub">AWS Monitoring Automation · Veritas Technologies LLC</div>
+          </div>
+          <div class="award-year">2024</div>
+        </div>
+
+        <div class="award-row">
+          <div class="award-icon-wrap">🎖</div>
+          <div class="award-content">
+            <div class="award-title">Honors in AI &amp; Machine Learning</div>
+            <div class="award-sub">B.E. Computer Science · Savitribai Phule Pune University</div>
+          </div>
+          <div class="award-year">2022</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ EDUCATION ═══════════════ -->
+  <section class="page-section alt-bg" id="education">
+    <div class="section-inner">
+      <div class="section-label">Education</div>
+
+      <div class="edu-list">
+        <div class="edu-item">
+          <div class="edu-meta">
+            <div class="edu-period">2024 – 2026</div>
+            <div class="edu-school">Yeshiva University<br/>Katz School of Science &amp; Health</div>
+            <div class="edu-loc">New York, NY</div>
+          </div>
+          <div class="edu-body">
+            <div class="edu-degree">Master of Science in Artificial Intelligence</div>
+            <div class="edu-gpa">GPA: 4.0 / 4.0</div>
+            <p class="edu-desc">Specialising in applied AI, deep learning, and production ML systems. Research focused on ML model validation pipelines for high-dimensional medical data. Active in hackathons and innovation competitions — Top-15 globally (2,400+ teams) and 2nd place wins.</p>
+          </div>
+        </div>
+        <div class="edu-divider"></div>
+        <div class="edu-item">
+          <div class="edu-meta">
+            <div class="edu-period">2018 – 2022</div>
+            <div class="edu-school">Savitribai Phule Pune University<br/>Sinhgad Institute of Technology</div>
+            <div class="edu-loc">Pune, India</div>
+          </div>
+          <div class="edu-body">
+            <div class="edu-degree">Bachelor of Engineering — Computer Science</div>
+            <div class="edu-gpa">GPA: 3.76 / 4.0 &nbsp;·&nbsp; <em>Honors in AI &amp; Machine Learning</em></div>
+            <p class="edu-desc">Strong foundation in algorithms, data structures, and software engineering. Specialised in AI and ML during final two years, building skills in neural networks, computer vision, and applied mathematics.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════ SKILLS DEEP DIVE ═══════════════ -->
+  <section class="page-section" id="skills-detail">
+    <div class="section-inner">
+      <div class="section-label">Technical Skills</div>
+
+      <div class="skills-columns">
+        <div class="skill-group">
+          <div class="sg-title">AI &amp; LLMs</div>
+          <div class="sg-tags">
+            <span>Claude API</span><span>GPT-4</span><span>Gemini</span><span>RAG Pipelines</span>
+            <span>LangChain</span><span>Embeddings</span><span>Fine-tuning</span><span>Prompt Engineering</span><span>AI Agents</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="sg-title">Machine Learning</div>
+          <div class="sg-tags">
+            <span>PyTorch</span><span>Transformers</span><span>Diffusion Models</span><span>UNet</span>
+            <span>scikit-learn</span><span>NumPy</span><span>Pandas</span><span>Model Validation</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="sg-title">Cloud &amp; DevOps</div>
+          <div class="sg-tags">
+            <span>AWS EC2 / S3 / CloudWatch</span><span>GCP</span><span>Docker</span>
+            <span>Kubernetes</span><span>Jenkins</span><span>GitHub Actions</span><span>CI/CD</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="sg-title">Programming</div>
+          <div class="sg-tags">
+            <span>Python</span><span>JavaScript</span><span>Java</span><span>C / C++</span><span>C#</span><span>SQL</span><span>Bash</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="sg-title">QA &amp; Automation</div>
+          <div class="sg-tags">
+            <span>Selenium</span><span>Playwright</span><span>pytest</span><span>Robot Framework</span><span>BDD / Gherkin</span><span>REST API Testing</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="sg-title">Integrations &amp; Tools</div>
+          <div class="sg-tags">
+            <span>Monday.com API</span><span>Square API</span><span>Twilio</span><span>Postman</span>
+            <span>JIRA</span><span>Tableau</span><span>Power BI</span><span>Git</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ==================== FOOTER ==================== -->
-  <footer>
-    <div class="footer-copy">© 2026 Dhwani Patel · Built with intent.</div>
+  <!-- ═══════════════ CONTACT ═══════════════ -->
+  <section class="page-section alt-bg" id="contact">
+    <div class="section-inner contact-inner">
+      <div class="section-label">Contact</div>
+      <h2 class="contact-heading">Looking forward<br/>to connecting.</h2>
+      <div class="contact-details">
+        <a href="mailto:dpatel8@mail.yu.edu" class="contact-item">
+          <span class="ci-label">Email</span>
+          <span class="ci-val">dpatel8@mail.yu.edu</span>
+        </a>
+        <a href="tel:6097218978" class="contact-item">
+          <span class="ci-label">Phone</span>
+          <span class="ci-val">609-721-8978</span>
+        </a>
+        <a href="https://linkedin.com/in/dhwanipatel1706" target="_blank" class="contact-item">
+          <span class="ci-label">LinkedIn</span>
+          <span class="ci-val">dhwanipatel1706 ↗</span>
+        </a>
+        <a href="https://github.com/dpatel1706" target="_blank" class="contact-item">
+          <span class="ci-label">GitHub</span>
+          <span class="ci-val">dpatel1706 ↗</span>
+        </a>
+      </div>
+      <p class="contact-sub">
+        Actively seeking <strong>AI Engineer</strong>, <strong>ML Engineer</strong>, and <strong>AI Automation Engineer</strong> roles
+        at companies building at the frontier of AI — available from May 2026.
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer id="site-footer">
+    <span>© 2026 Dhwani Patel</span>
     <div class="footer-links">
-      <a href="https://dpatel1706.github.io/" target="_blank" rel="noopener">Portfolio</a>
-      <a href="https://github.com/dpatel1706" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://linkedin.com/in/dhwanipatel1706" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://linkedin.com/in/dhwanipatel1706" target="_blank">LinkedIn</a>
+      <a href="https://github.com/dpatel1706" target="_blank">GitHub</a>
+      <a href="https://dpatel1706.github.io/" target="_blank">Portfolio</a>
       <a href="mailto:dpatel8@mail.yu.edu">Email</a>
     </div>
   </footer>
 
-  <!-- Scripts (order matters) -->
-  <script src="js/data.js"></script>
-  <script src="js/cursor.js"></script>
-  <script src="js/nav.js"></script>
-  <script src="js/terminal.js"></script>
-  <script src="js/skills.js"></script>
-  <script src="js/experience.js"></script>
-  <script src="js/projects.js"></script>
-  <script src="js/awards.js"></script>
-  <script src="js/education.js"></script>
-  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

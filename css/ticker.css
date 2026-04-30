@@ -1,0 +1,41 @@
+/* ticker.css — Infinite Skills Ticker */
+
+.ticker-wrap {
+  overflow: hidden;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+  padding: 1rem 0;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.ticker-track {
+  display: inline-block;
+  animation: ticker-scroll 38s linear infinite;
+}
+
+.ticker-track span {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  padding: 0 6px;
+  transition: color 0.2s;
+}
+.ticker-track span:hover { color: var(--accent); }
+
+.ticker-track .sep {
+  color: var(--accent);
+  opacity: 0.5;
+  padding: 0 2px;
+}
+
+@keyframes ticker-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.ticker-wrap:hover .ticker-track {
+  animation-play-state: paused;
+}
